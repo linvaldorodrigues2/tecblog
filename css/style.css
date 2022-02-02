@@ -68,12 +68,8 @@ a:visited {
 .post h2 {
   color: #ffc300;
   padding: 1px 0;
-<<<<<<< HEAD
   font-size: 1.5em;
-  font-weight: 700;
-=======
-  font-size: 1.2em;
->>>>>>> 0b2b7ef33a86981d6c89e73eece11ae307eb61c7
+  font-weight: 700; 
 }
 .post span {
   color: #4d4a51;
@@ -148,7 +144,6 @@ a:visited {
   background: #dadada;
   margin: 10px 0;
 }
-<<<<<<< HEAD
 footer {
   background: #4d4a51;
   color: #fff;
@@ -157,5 +152,3 @@ footer {
   justify-content: center;
   clear: both;
 }
-=======
->>>>>>> 0b2b7ef33a86981d6c89e73eece11ae307eb61c7
