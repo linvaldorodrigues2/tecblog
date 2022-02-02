@@ -144,3 +144,11 @@ a:visited {
   background: #dadada;
   margin: 10px 0;
 }
+footer {
+  background: #4d4a51;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  clear: both;
+}
