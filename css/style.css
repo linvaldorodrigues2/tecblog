@@ -97,6 +97,15 @@ a:visited {
   width: 21.53%; /*280px*/
   float: right;
 }
+.lateral input{
+  width: 85%;
+  height: 25px;
+  padding: 0 15px;
+}
+input, input::-webkit-input-placeholder{
+  font-size: 1em;
+  color: #dadada;
+}
 .conteudo-lateral {
   background: #fff;
   width: 92, 85%;
@@ -110,6 +119,8 @@ a:visited {
   padding: 10px;
   font-size: 1.2em;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 .posts-relacionados p {
   padding: 5px;
