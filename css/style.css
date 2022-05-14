@@ -19,18 +19,17 @@ a {
   clear: both;
   display: table;
 }
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
 
 /*screen mobile*/
 [class*="col-"] {
   width: 100%;
+  float: left;
+  padding: 15px;
 }
 
-header {
+#header {
   background: #ffc300;
+  width: 100%;
   height: 150px;
   display: flex;
   justify-content: space-around;
@@ -69,9 +68,10 @@ header nav {
 /*Area de posts*/
 #conteudo {
   width: 95%;
-  margin-left: 8px;
+  margin-left: 20px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 #conteudo .post {
@@ -100,39 +100,44 @@ header nav {
 
 /*Area lateral*/
 
+/*lateral-pesquisae*/
+.lateral-pesquisar {
+  display: none;
+}
+
 /*lateral - posts relacionados*/
-#lateral {
+.lateral {
   width: 100%;
   margin: 5px 0;
   display: flex;
   justify-content: center;
 }
-#lateral .conteudo-lateral {
+.lateral .conteudo-lateral {
   background: #fff;
   width: 90%;
   padding: 10px;
   margin: 15px 15px 15px 0;
 }
-#lateral .texto {
+.lateral .texto {
   padding: 5px 0;
   border-bottom: 1px solid #dadada;
 }
-#lateral .divisor-texto {
+.lateral .divisor-texto {
   border: none;
 }
-#lateral .texto h3 {
+.lateral .texto h3 {
   background: #dadada;
   padding: 10px;
   text-align: center;
 }
-#lateral .texto p {
+.lateral .texto p {
   padding: 5px;
   margin: 3px;
 }
-#lateral .texto a {
+.lateral .texto a {
   display: none;
 }
-#lateral .divisor {
+.lateral .divisor {
   background: #dadada;
   height: 1px;
 }
@@ -210,9 +215,17 @@ footer {
   .col-s-12 {
     width: 100%;
   }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .lateral-pesquisar {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1125px) {
   /*screen desktop*/
   .col-1 {
     width: 8.33%;
@@ -249,5 +262,89 @@ footer {
   }
   .col-12 {
     width: 100%;
+  }
+
+  header,
+  .row {
+    min-width: 1125px;
+  }
+  #header {
+    background: #ffc300;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  header #logo {
+    font-size: 3em;
+    padding: 20px 0;
+    font-weight: bold;
+    color: #4d4d4d;
+    position: absolute;
+    left: 200px;
+    order: 1;
+  }
+  header #logo span {
+    color: #fff;
+  }
+
+  header #menu-icon div {
+    display: none;
+  }
+
+  header #pesquisa-icon {
+    display: none;
+  }
+  header #nav {
+    position: absolute;
+    right: 180px;
+    display: block;
+    order: 2;
+  }
+  header #nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 10px;
+  }
+  header #nav a:hover {
+    color: #4d4d4d;
+  }
+
+  #conteudo {
+    width: 80%;
+    margin: 0 200px;
+  }
+  #conteudo .post a {
+    color: #0099ff;
+    display: block;
+  }
+  #lateral {
+    margin-right: 50px;
+  }
+  .lateral {
+    width: 80%;
+  }
+  .lateral-pesquisar {
+    background: #fff;
+    width: 73%;
+    padding: 10px;
+    margin: 15px 15px 15px 10px;
+    display: block;
+  }
+  .lateral-pesquisar input {
+    width: 100%;
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid #dadada;
+  }
+  .lateral-pesquisar input,
+  input::-webkit-input-placeholder {
+    font-size: 1em;
+    color: #a3a3a3;
   }
 }

@@ -10,84 +10,120 @@
 
   <body>
     <header>
-      <div id="logo">Tec<span>Blog</span></div>
+      <div id="header">
+        <div id="logo">Tec<span>Blog</span></div>
 
-      <div id="menu-icon">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div id="pesquisa-icon">
+          <img src="../img/lupa.png" alt="lupa.png" />
+        </div>
+
+        <nav id="nav">
+          <a class="home" href="">Home</a>
+          <a href="">Jogos</a>
+          <a href="">Celulares</a>
+          <a href="">Informática</a>
+          <a href="">Eletrônicos</a>
+        </nav>
       </div>
-
-      <div id="pesquisa-icon">
-        <img src="../img/lupa.png" alt="lupa.png" />
-      </div>
-
-      <nav>
-        <a class="home" href="">Home</a>
-        <a href="">Jogos</a>
-        <a href="">Celulares</a>
-        <a href="">Informática</a>
-        <a href="">Eletrônicos</a>
-      </nav>
     </header>
 
     <div class="row">
+      <div class="col-S-6">
+        <!--conteudo - posts-->
+        <main id="conteudo">
+          <div class="post">
+            <h2>Titulo da postagem</h2>
+            <span>postado em 18 de Abril de 2022</span>
+            <img src="../img/imagem-1.jpg" alt="imagem-1.jpg" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              nihil quae perspiciatis. Autem debitis sapiente iste at
+              perspiciatis sed voluptate quaerat cum, asperiores velit non
+              dolore, illum, obcaecati necessitatibus magnam?
+            </p>
+            <a href="">Leia mais</a>
+          </div>
+          <div class="post">
+            <h2>Titulo da postagem</h2>
+            <span>postado em 18 de Abril de 2022</span>
+            <img src="../img/imagem-2.jpg" alt="imagem-2.jpg" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              nihil quae perspiciatis. Autem debitis sapiente iste at
+              perspiciatis sed voluptate quaerat cum, asperiores velit non
+              dolore, illum, obcaecati necessitatibus magnam?
+            </p>
+            <a href="">Leia mais</a>
+          </div>
+          <div class="post">
+            <h2>Titulo da postagem</h2>
+            <span>postado em 18 de Abril de 2022</span>
+            <img src="../img/imagem-3.jpg" alt="imagem-3.jpg" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              nihil quae perspiciatis. Autem debitis sapiente iste at
+              perspiciatis sed voluptate quaerat cum, asperiores velit non
+              dolore, illum, obcaecati necessitatibus magnam?
+            </p>
+            <a href="">Leia mais</a>
+          </div>
+        </main>
+      </div>
 
-      <main id="conteudo">
-        <div class="post">
-          <h2>Titulo da postagem</h2>
-          <span>postado em 18 de Abril de 2022</span>
-          <img src="../img/imagem-1.jpg" alt="imagem-1.jpg" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nihil
-            quae perspiciatis. Autem debitis sapiente iste at perspiciatis sed
-            voluptate quaerat cum, asperiores velit non dolore, illum, obcaecati
-            necessitatibus magnam?
-          </p>
-          <a href="">Leia mais</a>
-        </div>
-      </main>
-  
-      <aside id="lateral">
-        <section class="conteudo-lateral">
-          <div class="texto">
-            <h3>Postagens relacionadas</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <a href="">Leia mais</a>
+      <div class="col-s-5">
+        <!--lateral-->
+        <aside class="lateral-pesquisar">
+          <section class="conteudo-lateral">
+            <form action="">
+              <input type="text" placeholder="Pesquise" />
+            </form>
+          </section>
+        </aside>
+        <aside class="lateral">
+          <section class="conteudo-lateral">
+            <div class="texto">
+              <h3>Postagens relacionadas</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <a href="">Leia mais</a>
+            </div>
+
+            <div class="texto divisor-texto">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="">Leia mais</a>
+            </div>
+          </section>
+        </aside>
+        <aside class="lateral">
+          <div class="categoria">
+            <h3>Categoria</h3>
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">Jogos</a>
+              </li>
+              <li>
+                <a href="">Celulares</a>
+              </li>
+              <li>
+                <a href="">Informática</a>
+              </li>
+              <li class="ultimo">
+                <a href="">Eletrônicos</a>
+              </li>
+            </ul>
           </div>
-  
-          <div class="texto divisor-texto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="">Leia mais</a>
-          </div>
-        </section>
-      </aside>
-      <aside id="lateral">
-        <div class="categoria">
-          <h3>Categoria</h3>
-          <ul>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Jogos</a>
-            </li>
-            <li>
-              <a href="">Celulares</a>
-            </li>
-            <li>
-              <a href="">Informática</a>
-            </li>
-            <li class="ultimo">
-              <a href="">Eletrônicos</a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-  
-      <footer>&copy;Todos os direitos reservados</footer>
-      
+        </aside>
+      </div>
     </div>
-    
+
+    <footer>&copy;Todos os direitos reservados</footer>
   </body>
 </html>
