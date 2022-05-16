@@ -177,6 +177,7 @@ footer {
   text-align: center;
 }
 
+/*screen tablet*/
 @media only screen and (min-width: 600px) {
   /*screen teblet*/
   .col-s-1 {
@@ -225,6 +226,7 @@ footer {
   }
 }
 
+/*Screen desktop*/
 @media only screen and (min-width: 1125px) {
   /*screen desktop*/
   .col-1 {
@@ -266,7 +268,9 @@ footer {
 
   header,
   .row {
-    min-width: 1125px;
+    min-width: 1436px;
+    display: flex;
+    justify-content: center;
   }
   #header {
     background: #ffc300;
@@ -284,7 +288,7 @@ footer {
     font-weight: bold;
     color: #4d4d4d;
     position: absolute;
-    left: 200px;
+    left: 340px;
     order: 1;
   }
   header #logo span {
@@ -300,7 +304,7 @@ footer {
   }
   header #nav {
     position: absolute;
-    right: 180px;
+    right: 350px;
     display: block;
     order: 2;
   }
@@ -316,24 +320,26 @@ footer {
   }
 
   #conteudo {
-    width: 80%;
-    margin: 0 200px;
+    width: 95%;
+    margin-left: 80px;
   }
   #conteudo .post a {
-    color: #0099ff;
+    color: #ffc300;
     display: block;
+    margin: 5px 0;
   }
-  #lateral {
-    margin-right: 50px;
+  #conteudo .post a:hover{
+    color: #4d4d4d;
   }
+
   .lateral {
     width: 80%;
   }
   .lateral-pesquisar {
     background: #fff;
-    width: 73%;
+    width: 72%;
     padding: 10px;
-    margin: 15px 15px 15px 10px;
+    margin: 20px 15px 10px 10px;
     display: block;
   }
   .lateral-pesquisar input {
@@ -346,5 +352,21 @@ footer {
   input::-webkit-input-placeholder {
     font-size: 1em;
     color: #a3a3a3;
+  }
+  .lateral .texto a{
+    display: block;
+    color: #ffc300;
+    margin: 3px;
+    padding: 5px;
+  }
+  .lateral .texto a:hover{
+    color: #4d4d4d;
+  }
+  .categoria li:hover{
+    background: #ffc300;
+    
+  }
+  .categoria li a:hover{
+    color: #fff;
   }
 }
