@@ -27,7 +27,7 @@ a {
   padding: 15px;
 }
 
-#header {
+header {
   background: #ffc300;
   width: 100%;
   height: 150px;
@@ -36,7 +36,7 @@ a {
   align-items: center;
 }
 
-header #logo {
+#logo {
   font-size: 3em;
   padding: 20px 0;
   font-weight: bold;
@@ -79,6 +79,7 @@ header nav {
   width: 95%;
   margin: 20px 0;
   padding: 20px;
+  border-radius: 10px;
 }
 #conteudo .post h2 {
   color: #ffc300;
@@ -103,6 +104,7 @@ header nav {
 /*lateral-pesquisae*/
 .lateral-pesquisar {
   display: none;
+  border-radius: 10px;
 }
 
 /*lateral - posts relacionados*/
@@ -111,6 +113,9 @@ header nav {
   margin: 5px 0;
   display: flex;
   justify-content: center;
+}
+.conteudo-lateral, .categoria{
+  border-radius: 10px;
 }
 .lateral .conteudo-lateral {
   background: #fff;
@@ -151,7 +156,9 @@ header nav {
 }
 .categoria h3 {
   background: #dadada;
+  margin-top: 5px;
   padding: 10px;
+  box-sizing: border-box;
   text-align: center;
 }
 .categoria li {
@@ -272,7 +279,7 @@ footer {
     display: flex;
     justify-content: center;
   }
-  #header {
+  header {
     background: #ffc300;
     width: 100%;
     height: 150px;
